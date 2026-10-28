@@ -1,0 +1,26 @@
+services:
+- type: web
+  name: douyin-open-mcp
+  runtime: node
+  plan: free
+  region: singapore
+  buildCommand: npm install && npm run build
+  startCommand: node dist/index.js
+  healthCheckPath: /health
+  envVars:
+    - key: NODE_VERSION
+      value: "20"
+    - key: HOST
+      value: "0.0.0.0"
+    - key: DOUYIN_MCP_API_KEY
+      generateValue: true
+    - key: DOUYIN_CLIENT_KEY
+      sync: false
+    - key: DOUYIN_CLIENT_SECRET
+      sync: false
+    - key: DOUYIN_REDIRECT_URI
+      sync: false
+    - key: DOUYIN_SCOPES
+      value: user_info,video.create.bind,video.list
+    - key: PUBLIC_BASE_URL
+      sync: false

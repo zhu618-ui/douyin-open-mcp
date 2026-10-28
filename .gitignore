@@ -1,0 +1,13 @@
+node_modules/
+dist/
+data/*.json
+data/*.sqlite
+data/*.db
+.env
+.env.local
+*.log
+.DS_Store
+uploads/
+tmp/
+data/BOT_API_KEY.txt
+!.gitkeep
