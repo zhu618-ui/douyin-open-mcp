@@ -11,3 +11,4 @@ uploads/
 tmp/
 data/BOT_API_KEY.txt
 !.gitkeep
+data/*.txt

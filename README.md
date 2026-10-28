@@ -1,3 +1,13 @@
+---
+title: Douyin Open MCP
+emoji: 🎬
+colorFrom: gray
+colorTo: red
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # douyin-open-mcp
 
 面向 **Grok Bot** 的抖音（Douyin）远程 MCP 服务：用 **抖音开放平台官方 OpenAPI**（`open.douyin.com`）完成授权、上传、创建视频与作品列表。
